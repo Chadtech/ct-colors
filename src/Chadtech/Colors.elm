@@ -12,27 +12,41 @@ module Chadtech.Colors
         , importantText
         , importanterText
         , lowWarning
-        , offBlue
-        , offBlueDarker
-        , pointColor
+        , point
         , pointier
         , prettyBlue
         )
 
 {-| Colors in the Chadtech design standard v1
 
-#Colors
 
-@docs backgroundx2, backgroundx2, actualBlack, pointColor, pointier, importantText, importanterText, good, critical, prettyBlue, lowWarning, ignorable0, ignorable1, ignorable2, ignorable 3, offBlue, offBlueDarker
+# Background
+
+@docs backgroundx2, backgroundx1, actualBlack
+
+
+# Point
+
+@docs point, pointier, importantText, importanterText
+
+
+# Ignorables
+
+@docs ignorable0, ignorable1, ignorable2, ignorable3
+
+
+# High Saturation Colors
+
+@docs good, critical, prettyBlue, lowWarning
 
 -}
 
 import Css exposing (Color, hex)
 
 
-{-| `backgroundx2` is the background color. Not totally black, and slightly turqoise, but still dark
+{-| `backgroundx2` is the default background color. Not totally black, and slightly turqoise, but still dark
 
-<div style="width: 200px; height: 200px color: #06120e">backgroundx2</div>
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #06120e"></div>
 
 -}
 backgroundx2 : Color
@@ -41,76 +55,140 @@ backgroundx2 =
 
 
 {-| A darker version of backgroundx2. Could be mistaken as black. This color exists mainly to emphasize the visual effect of being in the background, or for contrast against backgroundx2
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #030907"></div>
+
 -}
 backgroundx1 : Color
 backgroundx1 =
     hex "#030907"
 
 
-{-| Actual black. Should rarely be used, but used to demonstrate absolute minimum brightness
+{-| Actual black. Should rarely be used, but used to demonstrate absolute minimum brightness.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #000000"></div>
+
 -}
 actualBlack : Color
 actualBlack =
     hex "#000000"
 
 
-{-| This color is for things that demand attention and must be noticed. Should be used sparingly
+{-| This color is for things that demand attention and must be noticed. It should be used sparingly, if at all.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #f21d23"></div>
+
 -}
 critical : Color
 critical =
     hex "#f21d23"
 
 
+{-| Warnings, but not the "critical melt down" sort, more the "something isnt right" sort.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #651a20"></div>
+
+-}
 lowWarning : Color
 lowWarning =
     hex "#651a20"
 
 
+{-| When things are successful, this color is used.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #366317"></div>
+
+-}
 good : Color
 good =
     hex "#366317"
 
 
+{-| When things need to be decorated, they are blue. Blue is the color to make things look pretty. Its the color for things that are special.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #175cfe"></div>
+
+-}
 prettyBlue : Color
 prettyBlue =
     hex "#175cfe"
 
 
+{-| When some text needs even more priority or attention
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e3d34b"></div>
+
+-}
 importanterText : Color
 importanterText =
     hex "#e3d34b"
 
 
+{-| When some text needs priority or attention
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b39f4b"></div>
+
+-}
 importantText : Color
 importantText =
     hex "#b39f4b"
 
 
+{-| Point, but brighter. Useful for lighting up point during a hover over.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e0d6ca"></div>
+
+-}
 pointier : Color
 pointier =
     hex "#e0d6ca"
 
 
-pointColor : Color
-pointColor =
+{-| Point, the default color of text and content. If things are the content that should be presented, then they should be colored point. They are "the point" of the web app.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b0a69a"></div>
+
+-}
+point : Color
+point =
     hex "#b0a69a"
 
 
+{-| This color is called "ignorable", its for unimportant things the user can be forgotten.
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #807672"></div>
+
+-}
 ignorable0 : Color
 ignorable0 =
     hex "#807672"
 
 
+{-| `ignorable1` is darker than `ignorable0`
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #57524f"></div>
+
+-}
 ignorable1 : Color
 ignorable1 =
     hex "#57524f"
 
 
+{-| `ignorable2` is darker than `ignorable1`
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #2c2826"></div>
+
+-}
 ignorable2 : Color
 ignorable2 =
     hex "#2c2826"
 
 
+{-| `ignorable3` is darker than `ignorable2`
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #131610"></div>
+
+-}
 ignorable3 : Color
 ignorable3 =
     hex "#131610"
