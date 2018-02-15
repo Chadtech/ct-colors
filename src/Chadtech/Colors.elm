@@ -9,25 +9,25 @@ module Chadtech.Colors
         , ignorable1
         , ignorable2
         , ignorable3
-        , importantText
-        , importanterText
+        , important0
+        , important1
         , lowWarning
-        , point
-        , pointier
+        , point0
+        , point1
         , prettyBlue
         )
 
-{-| Colors in the Chadtech design standard v1
+{-| Colors in the Chadtech design standard v1.1
 
 
 # Background
 
-@docs backgroundx2, backgroundx1, actualBlack
+@docs background2, background1, background3, background0
 
 
 # Point
 
-@docs point, pointier, importantText, importanterText
+@docs point0, point1, important0, important1
 
 
 # Ignorables
@@ -44,24 +44,34 @@ module Chadtech.Colors
 import Css exposing (Color, hex)
 
 
-{-| `backgroundx2` is the default background color. Not totally black, and slightly turqoise, but still dark
+{-| `background2` is the default background color. Not totally black, and slightly turqoise, but still dark
 
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #06120e"></div>
 
 -}
-backgroundx2 : Color
-backgroundx2 =
+background2 : Color
+background2 =
     hex "#06120e"
 
 
-{-| A darker version of backgroundx2. Could be mistaken as black. This color exists mainly to emphasize the visual effect of being in the background, or for contrast against backgroundx2
+{-| A darker version of background2. Could be mistaken as black. This color exists mainly to emphasize the visual effect of being in the background, or for contrast against `background2`
 
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #030907"></div>
 
 -}
-backgroundx1 : Color
-backgroundx1 =
+background1 : Color
+background1 =
     hex "#030907"
+
+
+{-| A lighter version of `background2`. Usually used to highlight list items against `background2`
+
+<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #071d17"></div>
+
+-}
+background3 : Color
+background3 =
+    hex "#071d17"
 
 
 {-| Actual black. Should rarely be used, but used to demonstrate absolute minimum brightness.
@@ -69,8 +79,8 @@ backgroundx1 =
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #000000"></div>
 
 -}
-actualBlack : Color
-actualBlack =
+background0 : Color
+background0 =
     hex "#000000"
 
 
@@ -119,8 +129,8 @@ prettyBlue =
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e3d34b"></div>
 
 -}
-importanterText : Color
-importanterText =
+important1 : Color
+important1 =
     hex "#e3d34b"
 
 
@@ -129,28 +139,28 @@ importanterText =
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b39f4b"></div>
 
 -}
-importantText : Color
-importantText =
+important0 : Color
+important0 =
     hex "#b39f4b"
 
 
-{-| Point, but brighter. Useful for lighting up point during a hover over.
+{-| `point0`, but brighter. Useful for lighting up `poi0 during a hover over.
 
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e0d6ca"></div>
 
 -}
-pointier : Color
-pointier =
+point1 : Color
+point1 =
     hex "#e0d6ca"
 
 
-{-| Point, the default color of text and content. If things are the content that should be presented, then they should be colored point. They are "the point" of the web app.
+{-| Point, the default color of text and content. If things are the content that should be presented, then they should be colored `point0`. They are "the point" of the web app.
 
 <div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b0a69a"></div>
 
 -}
-point : Color
-point =
+point0 : Color
+point0 =
     hex "#b0a69a"
 
 
