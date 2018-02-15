@@ -1,8 +1,9 @@
 module Chadtech.Colors
     exposing
-        ( actualBlack
-        , backgroundx1
-        , backgroundx2
+        ( background0
+        , background1
+        , background2
+        , background3
         , critical
         , good
         , ignorable0
