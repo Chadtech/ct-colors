@@ -7,73 +7,70 @@ Here are the colors I use in all my projects. Its the Chadtech Standard Colors. 
 
 background2
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #06120e"></div>
+![#06120e](https://placehold.it/100/06120e/000000?text=+)
 
 background1
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #030907"></div>
+![#030907](https://placehold.it/100/030907/000000?text=+)
 
 background3
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #071d17"></div>
+![#030907](https://placehold.it/100/030907/000000?text=+)
 
 background0
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #000000"></div>
-
+![#000000](https://placehold.it/100/000000/000000?text=+)
 
 ## Point
 
 Point0
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b0a69a"></div>
+![#b0a69a](https://placehold.it/100/b0a69a/000000?text=+)
 
 Point1
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e0d6ca"></div>
+![#e0d6ca](https://placehold.it/100/e0d6ca/000000?text=+)
 
 Important0
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b39f4b"></div>
+![#b39f4b](https://placehold.it/100/b39f4b/000000?text=+)
 
 Important1
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e3d34b"></div>
-
+![#e3d34b](https://placehold.it/100/e3d34b/000000?text=+)
 
 ## Ignorables
 
 Ignorable0
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #807672"></div>
+![#807672](https://placehold.it/100/807672/000000?text=+)
 
 Ignorable1
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #57524f"></div>
+![#57524f](https://placehold.it/100/57524f/000000?text=+)
 
 Ignorable2
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #2c2826"></div>
+![#2c2826](https://placehold.it/100/2c2826/000000?text=+)
 
 Ignorable3
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #131610"></div>
-
+![#131610](https://placehold.it/100/131610/000000?text=+)
 
 ## High Saturation Colors
 
 Critical
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #f21d23"></div>
+![#f21d23](https://placehold.it/100/f21d23/000000?text=+)
 
 Low Warning
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #651a20"></div>
+![#651a20](https://placehold.it/100/651a20/000000?text=+)
 
 Good
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #366317"></div>
+![#366317](https://placehold.it/100/366317/000000?text=+)
 
 Pretty Blue
 
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #175cfe"></div>
+![#175cfe](https://placehold.it/100/175cfe/000000?text=+)
