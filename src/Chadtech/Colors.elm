@@ -1,205 +1,177 @@
-module Chadtech.Colors
-    exposing
-        ( background0
-        , background1
-        , background2
-        , background3
-        , critical
-        , good
-        , ignorable0
-        , ignorable1
-        , ignorable2
-        , ignorable3
-        , important0
-        , important1
-        , lowWarning
-        , point0
-        , point1
-        , prettyBlue
-        )
+module Chadtech.Colors exposing
+    ( background0, background1, background2, background3, background4
+    , content0, content1, content2, content3, content4, content5
+    , important0, important1
+    , decoration0, decoration1
+    , problem0, problem1
+    , success0, success1
+    )
 
-{-| Colors in the Chadtech design standard v1.1
+{-| Colors in the Chadtech design standard v2.0
 
 
 # Background
 
-@docs background2, background1, background3, background0
+@docs background0, background1, background2, background3, background4
 
 
-# Point
+# Content
 
-@docs point0, point1, important0, important1
-
-
-# Ignorables
-
-@docs ignorable0, ignorable1, ignorable2, ignorable3
+@docs content0, content1, content2, content3, content4, content5
 
 
-# High Saturation Colors
+# Important
 
-@docs good, critical, prettyBlue, lowWarning
+@docs important0, important1
+
+
+# Decoration
+
+@docs decoration0, decoration1
+
+
+# Problem
+
+@docs problem0, problem1
+
+
+# Success
+
+@docs success0, success1
 
 -}
 
 import Css exposing (Color, hex)
 
 
-{-| `background2` is the default background color. Not totally black, and slightly turqoise, but still dark
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #06120e"></div>
-
--}
-background2 : Color
-background2 =
-    hex "#06120e"
-
-
-{-| A darker version of background2. Could be mistaken as black. This color exists mainly to emphasize the visual effect of being in the background, or for contrast against `background2`
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #030907"></div>
-
--}
-background1 : Color
-background1 =
-    hex "#030907"
-
-
-{-| A lighter version of `background2`. Usually used to highlight list items against `background2`
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #071d17"></div>
-
--}
-background3 : Color
-background3 =
-    hex "#071d17"
-
-
-{-| Actual black. Should rarely be used, but used to demonstrate absolute minimum brightness.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #000000"></div>
-
+{-| #030907
 -}
 background0 : Color
 background0 =
-    hex "#000000"
+    hex "#030907"
 
 
-{-| This color is for things that demand attention and must be noticed. It should be used sparingly, if at all.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #f21d23"></div>
-
+{-| #071D10
 -}
-critical : Color
-critical =
-    hex "#f21d23"
+background1 : Color
+background1 =
+    hex "#071D10"
 
 
-{-| Warnings, but not the "critical melt down" sort, more the "something isnt right" sort.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #651a20"></div>
-
+{-| #082208
 -}
-lowWarning : Color
-lowWarning =
-    hex "#651a20"
+background2 : Color
+background2 =
+    hex "#082208"
 
 
-{-| When things are successful, this color is used.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #366317"></div>
-
+{-| #142909
 -}
-good : Color
-good =
-    hex "#366317"
+background3 : Color
+background3 =
+    hex "#142909"
 
 
-{-| When things need to be decorated, they are blue. Blue is the color to make things look pretty. Its the color for things that are special.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #175cfe"></div>
-
+{-| #30371A
 -}
-prettyBlue : Color
-prettyBlue =
-    hex "#175cfe"
+background4 : Color
+background4 =
+    hex "#30371A"
 
 
-{-| When some text needs even more priority or attention
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e3d34b"></div>
-
+{-| #131610
 -}
-important1 : Color
-important1 =
-    hex "#e3d34b"
+content0 : Color
+content0 =
+    hex "#131610"
 
 
-{-| When some text needs priority or attention
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b39f4b"></div>
-
+{-| #2C2826
 -}
-important0 : Color
-important0 =
-    hex "#b39f4b"
+content1 : Color
+content1 =
+    hex "#2C2826"
 
 
-{-| `point0`, but brighter. Useful for lighting up `poi0 during a hover over.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #e0d6ca"></div>
-
+{-| #57524F
 -}
-point1 : Color
-point1 =
-    hex "#e0d6ca"
+content2 : Color
+content2 =
+    hex "#57524F"
 
 
-{-| Point, the default color of text and content. If things are the content that should be presented, then they should be colored `point0`. They are "the point" of the web app.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #b0a69a"></div>
-
+{-| #807672
 -}
-point0 : Color
-point0 =
-    hex "#b0a69a"
-
-
-{-| This color is called "ignorable", its for unimportant things the user can be forgotten.
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #807672"></div>
-
--}
-ignorable0 : Color
-ignorable0 =
+content3 : Color
+content3 =
     hex "#807672"
 
 
-{-| `ignorable1` is darker than `ignorable0`
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #57524f"></div>
-
+{-| #B0A69A
 -}
-ignorable1 : Color
-ignorable1 =
-    hex "#57524f"
+content4 : Color
+content4 =
+    hex "#B0A69A"
 
 
-{-| `ignorable2` is darker than `ignorable1`
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #2c2826"></div>
-
+{-| #E0D6CA
 -}
-ignorable2 : Color
-ignorable2 =
-    hex "#2c2826"
+content5 : Color
+content5 =
+    hex "#E0D6CA"
 
 
-{-| `ignorable3` is darker than `ignorable2`
-
-<div style="border: 2px solid #000000; width: 200px; height: 200px; background-color: #131610"></div>
-
+{-| #B39F4B
 -}
-ignorable3 : Color
-ignorable3 =
-    hex "#131610"
+important0 : Color
+important0 =
+    hex "#B39F4B"
+
+
+{-| #E3D34B
+-}
+important1 : Color
+important1 =
+    hex "#E3D34B"
+
+
+{-| #175CFE
+-}
+decoration0 : Color
+decoration0 =
+    hex "#175CFE"
+
+
+{-| #0ABAB5
+-}
+decoration1 : Color
+decoration1 =
+    hex "#0ABAB5"
+
+
+{-| #651A20
+-}
+problem0 : Color
+problem0 =
+    hex "#651A20"
+
+
+{-| #F21D23
+-}
+problem1 : Color
+problem1 =
+    hex "#F21D23"
+
+
+{-| #366317
+-}
+success0 : Color
+success0 =
+    hex "#366317"
+
+
+{-| #0ACA1A
+-}
+success1 : Color
+success1 =
+    hex "#0ACA1A"
