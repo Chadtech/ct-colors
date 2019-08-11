@@ -3,14 +3,14 @@
     "name": "Chadtech/ct-colors",
     "summary": "Chadtech standard colors",
     "license": "BSD-3-Clause",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "exposed-modules": [
         "Chadtech.Colors"
     ],
     "elm-version": "0.19.0 <= v < 0.20.0",
     "dependencies": {
         "elm/core": "1.0.0 <= v < 2.0.0",
-        "rtfeldman/elm-css": "15.1.0 <= v < 16.0.0"
+        "rtfeldman/elm-css": "16.0.1 <= v < 17.0.0"
     },
     "test-dependencies": {}
 }
