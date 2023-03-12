@@ -1,7 +1,7 @@
 module Chadtech.Colors exposing
     ( background0, background1, background2, background3, background4
     , content0, content1, content2, content3, content4, content5
-    , important0, important1
+    , important0, important1, important2, important3, important4, important5
     , decoration0, decoration1
     , problem0, problem1
     , success0, success1
@@ -22,7 +22,7 @@ module Chadtech.Colors exposing
 
 # Important
 
-@docs important0, important1
+@docs important0, important1, important2, important3, important4, important5
 
 
 # Decoration
@@ -121,17 +121,45 @@ content5 =
     hex "#E0D6CA"
 
 
-{-| #B39F4B
+{-| #161303
 -}
 important0 : Color
 important0 =
-    hex "#B39F4B"
+    hex "#161303"
 
 
-{-| #E3D34B
+{-| #302507
 -}
 important1 : Color
 important1 =
+    hex "#302507"
+
+
+{-| #5A4F0E
+-}
+important2 : Color
+important2 =
+    hex "#5A4F0E"
+
+
+{-| 837339
+-}
+important3 : Color
+important3 =
+    hex "#837339"
+
+
+{-| B39F4B
+-}
+important4 : Color
+important4 =
+    hex "#B39F4B"
+
+
+{-| E3D34B
+-}
+important5 : Color
+important5 =
     hex "#E3D34B"
 
 
